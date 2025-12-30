@@ -9,3 +9,93 @@
     
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+PS C:\Users\STUDENT\Desktop\gopi> git config --global user.name "sudharsan15052007-debug"
+PS C:\Users\STUDENT\Desktop\gopi> git config --global user.email "sudharsan15052007@gmail.com"
+PS C:\Users\STUDENT\Desktop\gopi> git clone
+fatal: You must specify a repository to clone.
+
+usage: git clone [<options>] [--] <repo> [<dir>]
+
+    -v, --[no-]verbose    be more verbose
+    -q, --[no-]quiet      be more quiet
+    --[no-]progress       force progress reporting
+    --[no-]reject-shallow don't clone shallow repository
+    -n, --no-checkout     don't create a checkout
+    --checkout            opposite of --no-checkout
+    --[no-]bare           create a bare repository
+    --[no-]mirror         create a mirror repository (implies --bare)
+    -l, --[no-]local      to clone from a local repository
+    --no-hardlinks        don't use local hardlinks, always copy
+    --hardlinks           opposite of --no-hardlinks
+    -s, --[no-]shared     setup as shared repository
+    --[no-]recurse-submodules[=<pathspec>]
+                          initialize submodules in the clone
+    --[no-]recursive ...  alias of --recurse-submodules
+    -j, --[no-]jobs <n>   number of submodules cloned in parallel
+    --[no-]template <template-directory>
+                          directory from which templates will be used
+    --[no-]reference <repo>
+                          reference repository
+    --[no-]reference-if-able <repo>
+                          reference repository
+    --[no-]dissociate     use --reference only while cloning
+    -o, --[no-]origin <name>
+                          use <name> instead of 'origin' to track upstream
+    -b, --[no-]branch <branch>
+                          checkout <branch> instead of the remote's HEAD
+    --[no-]revision <rev> clone single revision <rev> and check out
+    -u, --[no-]upload-pack <path>
+                          path to git-upload-pack on the remote
+    --[no-]depth <depth>  create a shallow clone of that depth
+    --[no-]shallow-since <time>
+                          create a shallow clone since a specific time
+    --[no-]shallow-exclude <ref>
+                          deepen history of shallow clone, excluding ref
+    --[no-]single-branch  clone only one branch, HEAD or --branch
+    --[no-]tags           clone tags, and make later fetches not to follow them
+    --[no-]shallow-submodules
+                          any cloned submodules will be shallow
+    --[no-]separate-git-dir <gitdir>
+                          separate git dir from working tree
+    --[no-]ref-format <format>
+                          specify the reference format to use
+    -c, --[no-]config <key=value>
+    --[no-]server-option <server-specific>
+                          option to transmit
+    -6, --ipv6            use IPv6 addresses only
+    --[no-]remote-submodules
+                          any cloned submodules will use their remote-tracking branch
+    --[no-]sparse         initialize sparse-checkout file to include only files at root
+                          a URI for downloading bundles before fetching from origin remote
+
+PS C:\Users\STUDENT\Desktop\gopi> git clone https://github.com/sudharsan15052007-debug/kalam.git
+Cloning into 'kalam'...
+warning: You appear to have cloned an empty repository.
+PS C:\Users\STUDENT\Desktop\gopi> git add .
+fatal: not a git repository (or any of the parent directories): .git
+PS C:\Users\STUDENT\Desktop\gopi> cd kalam    
+PS C:\Users\STUDENT\Desktop\gopi\kalam> git add .
+PS C:\Users\STUDENT\Desktop\gopi\kalam> git commit -m "area maalik"
+[main (root-commit) e17dd06] area maalik
+ 1 file changed, 11 insertions(+)
+ create mode 100644 index.html
+PS C:\Users\STUDENT\Desktop\gopi\kalam> git push origin main
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 364 bytes | 364.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/sudharsan15052007-debug/kalam.git
+ * [new branch]      main -> main
+PS C:\Users\STUDENT\Desktop\gopi\kalam> 
